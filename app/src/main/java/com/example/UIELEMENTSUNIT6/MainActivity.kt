@@ -7,7 +7,7 @@ import android.widget.AdapterView.AdapterContextMenuInfo
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-
+import com.google.android.material.snackbar.Snackbar
 
 
 val queuedList = ArrayList<String>()
@@ -87,6 +87,14 @@ class MainActivity : AppCompatActivity() {
                 val info = item.getMenuInfo() as AdapterContextMenuInfo
                 val index = info.position
                 queuedList.add(songsArray[index])
+
+                val snackbar = Snackbar.make(findViewById(android.R.id.content), "Go to QueuedSongs Activity", Snackbar.LENGTH_LONG)
+                snackbar.setAction("Go", View.OnClickListener {
+                    val intent = Intent(this, QueuedSongsActivity::class.java)
+                    intent.putStringArrayListExtra("queuedList", queuedList)
+                    startActivity(intent)
+                })
+                snackbar.show()
                 true
             }
             else -> super.onContextItemSelected(item)
