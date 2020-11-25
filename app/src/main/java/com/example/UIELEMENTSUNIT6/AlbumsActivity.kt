@@ -46,7 +46,7 @@ class AlbumsActivity : AppCompatActivity() {
             }
             var tvImageName = view?.findViewById<TextView>(R.id.imageName)
             var imageView = view?.findViewById<ImageView>(R.id.imageView);
-            //tvImageName?.text = itemModel[position].name;
+
             if(position==0) {
                 tvImageName?.text = "Shawn Mendes"
             }
