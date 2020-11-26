@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RamosUIElements2">
-        <activity android:name="com.example.UIELEMENTSUNIT6.AlbumsActivity"></activity>
-        <activity android:name="com.example.UIELEMENTSUNIT6.QueuedSongsActivity" />
-        <activity android:name="com.example.UIELEMENTSUNIT6.AlbumDetailsActivity" />
-        <activity android:name="com.example.UIELEMENTSUNIT6.MainActivity">
+        <activity android:name=".AddSongs"></activity>
+        <activity android:name=".AlbumsActivity" />
+        <activity android:name=".QueuedSongsActivity" />
+        <activity android:name=".AlbumDetailsActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
