@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<item android:id="@+id/create_title"
+    android:title="Add title"></item>
+    <item android:id="@+id/display_tile"
+        android:title="Display Title"></item>
 </menu>

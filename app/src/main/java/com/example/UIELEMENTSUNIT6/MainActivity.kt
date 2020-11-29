@@ -46,14 +46,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater: MenuInflater =menuInflater
-        inflater.inflate(R.menu.main_menu, menu)
+        inflater.inflate(R.menu.main_menu2, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean{
         return when(item.itemId){
-            R.id.go_to_songs_act -> {
-                startActivity(Intent(this, MainActivity::class.java))
+            R.id.create_title -> {
+                startActivity(Intent(applicationContext, newAlbum::class.java))
                 true
             }
             R.id.go_to_albums_act -> {
